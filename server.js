@@ -13,4 +13,5 @@ mogoose.connect(process.env.DATABASE_ACCESS, config, () => console.log("Connecte
 app.use(express.json())
 app.use(cors())
 app.use('/api', routeUrls)
-app.listen(4000, () => console.log('Server up and running'))
+const PORT = process.env.PORT || 4000
+app.listen(PORT, () => console.log('Server up and running'))

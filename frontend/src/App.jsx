@@ -59,7 +59,7 @@ function App() {
           <Form onSubmit={onSignUp}>
             <Form.Group controlId="formBasicEmail">
               <Form.Label>Name</Form.Label>
-              <Form.Control type="text" placeholder="Enter your name" value={name} onChange={e => setName(e.target.value)} required/>
+              <Form.Control type="text" placeholder="Enter your name" value={name} onChange={e => setName(e.target.value)}/>
             </Form.Group>
 
             <Form.Group controlId="formBasicEmail">
